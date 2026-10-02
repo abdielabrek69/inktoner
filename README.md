@@ -1,16 +1,70 @@
 # INKTONER WEB & SYSTEM
 
-Sitio web estático multipágina para soporte TI, impresoras, consumibles, desarrollo web, POS y ciberseguridad.
+Sitio web de **INKTONER WEB & SYSTEM**, enfocado en servicios de soporte técnico, mantenimiento de equipos, impresoras, consumibles, desarrollo web, sistemas POS y soluciones de tecnología.
 
-## Antes de publicar
+## Descripción
 
-### Logo
-El prompt exige `assets/img/INKTONER.PNG`, pero el logo oficial no fue adjuntado. El ZIP incluye un PNG transparente de 1x1 solo para conservar la ruta requerida. **Reemplázalo por el logo oficial antes de publicar.**
+Este proyecto corresponde al sitio web corporativo de INKTONER WEB & SYSTEM.
 
-### Contacto
-Edita `assets/js/config.js`:
+El sitio presenta los principales servicios ofrecidos y proporciona diferentes medios de contacto para solicitar información, soporte o cotizaciones.
 
-```js
+### Servicios
+
+* Soporte técnico y mantenimiento de equipos de cómputo.
+* Instalación y configuración de software.
+* Mantenimiento y soporte para impresoras.
+* Venta de consumibles y accesorios.
+* Desarrollo y mantenimiento de sitios web.
+* Desarrollo de sistemas y soluciones empresariales.
+* Sistemas punto de venta (POS).
+* Redes y conectividad.
+* Soluciones de seguridad informática.
+
+## Tecnologías
+
+El proyecto está desarrollado utilizando tecnologías web estándar:
+
+* HTML5
+* CSS3
+* JavaScript
+* Diseño responsive
+* SEO básico
+* Open Graph
+* Accesibilidad web
+
+No requiere frameworks ni dependencias externas para ejecutarse.
+
+## Estructura del proyecto
+
+```text
+INKTONER/
+├── assets/
+│   ├── css/
+│   ├── img/
+│   └── js/
+├── index.html
+├── servicios.html
+├── soporte.html
+├── desarrollo-web.html
+├── impresoras.html
+├── pos.html
+├── ciberseguridad.html
+├── contacto.html
+├── robots.txt
+└── sitemap.xml
+```
+
+## Configuración
+
+Antes de publicar el sitio, configura los datos de contacto en:
+
+```text
+assets/js/config.js
+```
+
+Ejemplo:
+
+```javascript
 const SITE_CONFIG = Object.freeze({
     whatsapp: "",
     phone: "",
@@ -19,48 +73,94 @@ const SITE_CONFIG = Object.freeze({
 });
 ```
 
-No se inventaron datos comerciales.
+Introduce únicamente los datos comerciales correspondientes al negocio.
 
-### Dominio
-El proyecto usa `https://www.ejemplo.com/` como placeholder en canonical, Open Graph, robots y sitemap. Sustitúyelo por el dominio real.
+## Dominio
 
-## Ejecutar
+Antes de publicar el sitio, verifica que `canonical`, Open Graph, `robots.txt` y `sitemap.xml` utilicen el dominio oficial del sitio.
 
-No requiere Node.js ni dependencias.
+## Ejecución local
 
-Puedes abrir `index.html` directamente o usar:
+El sitio es completamente estático y no requiere Node.js, npm ni instalación de dependencias.
+
+Puedes abrir directamente:
+
+```text
+index.html
+```
+
+También puedes utilizar un servidor local:
 
 ```bash
 python -m http.server 8000
 ```
 
-## GitHub Pages
+Después abre:
 
-Sube el contenido a un repositorio y activa GitHub Pages desde la rama principal.
+```text
+http://localhost:8000
+```
 
-## Incluye
+## Publicación
 
-- 10 páginas HTML independientes.
-- CSS centralizado y responsive.
-- Menú desktop/mobile.
-- Estado activo de navegación.
-- SEO básico y Open Graph.
-- robots.txt y sitemap.xml.
-- Accesibilidad: labels, focus visible, skip link, aria y reduced motion.
-- Formulario estático que prepara una solicitud de WhatsApp.
-- JavaScript vanilla sin dependencias.
-- Sin `eval()` y sin `innerHTML` para datos de usuario.
+El proyecto puede desplegarse en diferentes servicios de hosting para sitios estáticos, incluyendo:
+
+* GitHub Pages
+* Netlify
+* Vercel
+* Hosting tradicional mediante FTP
+
+Para GitHub Pages, sube el proyecto al repositorio y configura el despliegue desde la rama principal.
+
+## Características
+
+* Diseño responsive para dispositivos móviles, tablets y escritorio.
+* Navegación adaptada a desktop y móvil.
+* Menú con estado activo.
+* Formulario de contacto.
+* Integración con WhatsApp.
+* SEO básico.
+* Open Graph para compartir contenido.
+* `robots.txt`.
+* `sitemap.xml`.
+* Accesibilidad mediante etiquetas y atributos ARIA.
+* Focus visible para navegación mediante teclado.
+* Skip link.
+* Soporte para `prefers-reduced-motion`.
+* JavaScript vanilla sin dependencias.
+* Estructura multipágina.
+* Código organizado y mantenible.
 
 ## Imágenes
 
-Las imágenes de servicio se cargan desde URLs de Unsplash para mantener el ZIP ligero. Para un despliegue totalmente autónomo, puedes sustituirlas por imágenes locales con licencia compatible.
+Las imágenes utilizadas en determinadas secciones pueden cargarse desde servicios externos de imágenes.
 
-## Checklist final
+Para un despliegue completamente independiente, se recomienda almacenar las imágenes localmente dentro de:
 
-- [ ] Reemplazar el placeholder `assets/img/INKTONER.PNG`.
-- [ ] Configurar WhatsApp, teléfono y correo.
-- [ ] Configurar dominio real.
-- [ ] Revisar las imágenes.
-- [ ] Probar navegación desktop y móvil.
-- [ ] Probar formulario.
-- [ ] Publicar.
+```text
+assets/img/
+```
+
+y utilizar imágenes con los derechos de uso correspondientes.
+
+## Seguridad
+
+El proyecto utiliza JavaScript del lado del cliente y no requiere ejecución de código del servidor.
+
+El formulario de contacto no procesa información sensible directamente en el sitio; prepara la información para establecer contacto mediante los canales configurados.
+
+No se utilizan:
+
+* `eval()`
+* `innerHTML` para datos proporcionados por usuarios
+* Dependencias innecesarias
+
+## Estado del proyecto
+
+**Proyecto funcional y preparado para despliegue**, sujeto a la configuración de los datos comerciales, dominio, imágenes y canales de contacto correspondientes.
+
+## Autor
+
+**INKTONER WEB & SYSTEM**
+
+Soporte TI • Desarrollo Web • Sistemas • Tecnología
